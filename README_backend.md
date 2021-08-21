@@ -32,3 +32,9 @@ django-admin startapp product
 2. TEMPLATES
 - open 'ficticious_store/settinggs.py'
 - add 'template' in DIRS list
+
+### Run server
+```bash
+cd ficticious_store/
+python manage.py runserver
+```
