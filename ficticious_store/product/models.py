@@ -10,3 +10,7 @@ class Product(models.Model):
 	price = models.DecimalField('Price', decimal_places=2, max_digits=8)
 
 	quantity = models.IntegerField('Quantity in Inventory')
+
+	def __str__(self):
+
+		return self.name
