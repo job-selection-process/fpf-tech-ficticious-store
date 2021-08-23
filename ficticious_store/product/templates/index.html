@@ -6,7 +6,23 @@
 </head>
 <body>
 	<h1>Index</h1>
-	<h2>{{ keyword_01 }}</h2>
-	<h2>{{ keyword_02  }}</h2>
+	<h2>Logged status: {{ logged }}</h2>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Product</th>
+				<th>Price</th>				
+			</tr>
+		</thead>
+		<tbody>
+			{% for product in products %}
+				<tr>
+					<td><a href="{% url 'product' product.pk %}">{{ product.name }}</a></td>
+					<td> {{product.price}} </td>					
+				</tr>
+			{% endfor %}
+		</tbody>
+	</table>
 </body>
 </html>
