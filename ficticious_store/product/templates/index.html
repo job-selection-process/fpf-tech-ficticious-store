@@ -1,12 +1,17 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<title>Virtual Store</title>
+	<link rel="stylesheet" href="{% static 'css/styles.css'%}">
 </head>
 <body>
+	<img src="{% static 'images/django.png'%}">
 	<h1>Index</h1>
 	<h2>Logged status: {{ logged }}</h2>
+
+	<button onclick="test();">Test import JavaScript from Django static files</button>
 
 	<table>
 		<thead>
@@ -24,5 +29,7 @@
 			{% endfor %}
 		</tbody>
 	</table>
+
+	<script src="{% static 'js/scripts.js' %}" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>

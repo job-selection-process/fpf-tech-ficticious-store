@@ -1,0 +1,17 @@
+body {
+	
+	background-color: #CCC;
+	color: #222222;
+}
+
+A {
+	text-decoration:  none;
+	color: blue;
+}
+
+img	{
+	max-width:200px;
+    max-height:200px;
+    width: auto;
+    height: auto;    
+}
