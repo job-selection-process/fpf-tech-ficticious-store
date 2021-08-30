@@ -17,11 +17,12 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import handler404, handler500
 from product import views
-
+from vue_app import views as vue_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('product.urls'))
+    path('', include('product.urls')),
+    path('test', vue_views.test_vue)
 ]
 
 handler404 = views.error404
